@@ -1,0 +1,2 @@
+pip install -r error - apt-get install libpq-dev
+500 Error - run again 'collectstatic' with debug off.
