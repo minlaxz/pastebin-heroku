@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Paste Bin LAXZ</title>
+{% endblock title %}
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+{% block content %}
+
+<style>
+  @media screen and (max-width: 1024px) {
+    img.responsive {
+      width: 100%;
+      ;
+    }
+  }
+
+  @media screen and (min-width:1025px) and (max-width: 1280px) {
+    img.responsive {
+      width: 50%;
+    }
+  }
+
+  @media screen and (min-width: 1081px) {
+    img.responsive {
+      width: 95%;
+    }
+  }
+
+  img.responsive {
+    height: auto;
+  }
+
+  .foot-font {
+    font-family: 'Lobster Two', cursive;
+  }
+</style>
+
+<div>
+  <ul>
+    {%for i in data %}
+    <li>{{i}}</li>
+    {%endfor %}
+  </ul>
+
+</div>
+
+{%endblock%}
