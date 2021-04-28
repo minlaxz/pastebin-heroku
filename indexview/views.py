@@ -8,3 +8,8 @@ def indexView(req):
     data = res.json().values()
     # data = [1, 2, 3, 4, 5]
     return render(req, "indexview/index.html", {"data": data})
+
+
+# def runme(req):
+#     data = [1, 2, 3, 4]
+#     return render(req, "indexview/index.html", {"data": data})
